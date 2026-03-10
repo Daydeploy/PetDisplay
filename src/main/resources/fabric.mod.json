@@ -3,17 +3,16 @@
   "id": "petdisplay",
   "version": "${version}",
   "name": "Pet Display",
-  "description": "",
-  "authors": [],
+  "description": "Display current pet in inventory screen. ",
+  "authors": [
+    "Day"
+  ],
   "contact": {},
   "license": "LGPL-3.0",
   "icon": "assets/petdisplay/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "me.day.petdisplay.client.PetDisplayClient"
-    ],
-    "main": [
       "me.day.petdisplay.PetDisplay"
     ]
   },

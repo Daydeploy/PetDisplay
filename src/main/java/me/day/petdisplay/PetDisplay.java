@@ -1,10 +1,15 @@
 package me.day.petdisplay;
 
-import net.fabricmc.api.ModInitializer;
+import net.fabricmc.api.ClientModInitializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class PetDisplay implements ModInitializer {
+public class PetDisplay implements ClientModInitializer {
+    public static final String MOD_ID = "petdisplay";
+    public static Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     @Override
-    public void onInitialize() {
+    public void onInitializeClient() {
+        LOGGER.info("Initializing PetDisplay");
     }
 }
