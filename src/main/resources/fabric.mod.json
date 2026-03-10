@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "petdisplay",
+  "version": "${version}",
+  "name": "Pet Display",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/petdisplay/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.day.petdisplay.client.PetDisplayClient"
+    ],
+    "main": [
+      "me.day.petdisplay.PetDisplay"
+    ]
+  },
+  "mixins": [
+    "petdisplay.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
