@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 
 public class PetDisplay implements ClientModInitializer {
     public static final String MOD_ID = "petdisplay";
-    public static Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     @Override
     public void onInitializeClient() {
